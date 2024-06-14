@@ -82,6 +82,10 @@ The project consists of the following HTML files:
   7. Bake for 10-12 minutes.
   8. Cool and serve.
 
+## Live Demo
+
+You can access the live version of the website at: [Recipe Website](https://megathinker173.github.io/odin-recipes/)
+
 ## How to Contribute
 
 If you'd like to contribute to this project, feel free to fork the repository and submit pull requests with improvements or additional recipes.
