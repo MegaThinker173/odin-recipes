@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lora', serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+p {
+  font-family: 'Lora', serif;
+  margin-bottom: 20px;
+}
+
+.ingredients, .steps {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  width: fit-content;
+  list-style-position: inside;
+}
+
+.steps {
+  counter-reset: step-counter;
+}
+
+.steps li {
+  position: relative;
+  counter-increment: step-counter;
+  margin: 10px 0;
+}
+
+.steps li::before {
+  position: absolute;
+  left: 50%;
+  width: 2em;
+}
+
+/* Button Styles */
+.recipe1, .recipe2, .recipe3, .back-button {
+  /* Shared button styles */
+  display: inline-block;
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.recipe1, .recipe2, .recipe3 {
+  /* Primary button style */
+  background-color: #34C759; /* A more vibrant green color */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.recipe1:hover {
+  background-color: #2F9A44; /* A darker shade of green on hover */
+}
+
+.recipe2:hover {
+  background-color: #2F9A44; /* A darker shade of green on hover */
+}
+
+.recipe3:hover {
+  background-color: #2F9A44; /* A darker shade of green on hover */
+}
+
+.back-button {
+  /* Secondary button style */
+  background-color: #FFC107; /* A warm orange color */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+  background-color: #FFA07A; /* A darker shade of orange on hover */
+}
+
+/* Layout Styles */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 + ul, h2 + ol {
+  margin-top: 20px;
+}
